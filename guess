@@ -5,19 +5,19 @@ FACTOR=5
 
 if (( VAR < 2 ))
 then
-  echo "too small"
+  echo "guess too small"
   exit 1
 fi
 
 if (( VAR >= 900 ))
 then
-  echo "too large"
+  echo "guess too large"
   exit 1
 fi
 
 if (( VAR == 25 * FACTOR || CHEAT != 0 ))
 then
-  echo "just right"
+  echo "guess just right"
 else
-  echo "close enough"
+  echo "guess close enough"
 fi
